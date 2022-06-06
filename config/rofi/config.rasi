@@ -1,0 +1,7 @@
+/** Basic config file **/
+
+configuration {
+  show-icons:         true;
+  icon-theme:         "Tela circle dark";
+}
+@theme "/home/prince/.config/rofi/launchers/misc/blurry_full.rasi"
