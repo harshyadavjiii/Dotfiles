@@ -1,58 +1,30 @@
 syntax on
-
-" Disable compatibility with vi
 set nocompatible
-
-" Set Line Number
 set number
-
-" Enable vim to detect filetype
 filetype on
-
-" Enable plugins and will load by detecting file type
 filetype plugin on
-
-" Enable Indentation by default
 filetype indent on
-
-" Set shift width to 4 spaces.
 set shiftwidth=4
-
-" Set tab width to 4 columns.
 set tabstop=4
-
-" Set show/no show mode
 set noshowmode
-" set showmode
-
-" Instant Highlight while you search through a file.
 set incsearch
-
-" Ignore capital letters during search.
 set ignorecase
-
-" Will show similar results to your search.
 set showmatch
-
-" Override the ignorecase option if searching for capital letters.
-" This will allow you to search specifically for capital letters.
 set smartcase
-
-" Set Auto Indentation on
 set smartindent
-
-" I hate swape files Let's say goodbye to them
 set noswapfile
 set nobackup
-
-" Set undo instead of swap and backup
 set undodir=~/.vim/undodir
 set undofile
-
-" Enable mouse inside vim
 set mouse=a
+set fillchars+=vert:.
 
-" =======================< Plugins >=======================================
+" Wild Menu
+set wildmenu " for autocompletion
+set wildmode=list:longest " Make wildmenu behave like BC
+set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx 
+
+" Plugins ---------------------------------------------------------------{{{
 call plug#begin('~/.vim/plugged')
 
 Plug 'sheerun/vim-polyglot'
@@ -63,13 +35,13 @@ Plug 'drewtempelmeyer/palenight.vim'
 Plug 'ap/vim-css-color'
 Plug 'tpope/vim-commentary'
 Plug 'ryanoasis/vim-devicons'
+Plug 'junegunn/limelight.vim'
+Plug 'junegunn/goyo.vim'
+Plug 'instant-markdown/vim-instant-markdown'
 
 call plug#end()
 
-" ========================< Wild Menu >====================================
-set wildmenu " for autocompletion
-set wildmode=list:longest " Make wildmenu behave like BC
-set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx 
+"}}}
 
 " MAPPINGS --------------------------------------------------------------- {{{
 
@@ -132,6 +104,5 @@ set statusline+=\ row:\ %l\ col:\ %c\ \ line:\ %l\/%L
 " Show the status on the second to last line.
 set laststatus=2
 
+hi VertSplit cterm=NONE ctermbg=Blue ctermfg=Blue guibg=NONE
 "}}} 
-"
-
