@@ -55,7 +55,7 @@ Vim is by far most famous Unix text editor. I have used Vim Plug to manage vim p
  
  
  
- | Shortcut Key                | Description               |  |
+ | Shortcut Key                | Description               |
  | -----------                 | -----------               |
  | jk (Insert Mode)            | To escape                 |
  | Space (Normal Mode)         | :command                  |
