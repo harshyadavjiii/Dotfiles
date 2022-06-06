@@ -80,8 +80,14 @@ Vim is by far most famous Unix text editor. I have used Vim Plug to manage vim p
  
  Another usecase for me to use Vim is to make notes in markdown. In my expirience it works better a lot better then
  using Apps like Simple Note. There are three Vim PlugIns that I use to make my Note making expirience distraction free. 
- Limelight - **it highlights the current line I am on**, **Goyo which centered the whole text and removes any active terminal, buffer, Statusline, etc.**
- and the last one is Instant Markdown Preview which is my favourite - **It previews the changes I made to my markdown file Instantly in My Browser**
+ Limelight - *it highlights the current line I am on*, *Goyo which centered the whole text and removes any active terminal, buffer, Statusline, etc.*
+ and the last one is Instant Markdown Preview which is my favourite - *It previews the changes I made to my markdown file Instantly in My Browser*
+ 
+ 
+ ![2022-06-07](https://user-images.githubusercontent.com/52949057/172234333-d716a98e-1dde-49d9-af49-1585bfc7bf97.png)
+ 
+ 
+ 
  
  ****Other than these tools I use Kitty and Alacritty as Terminal emulators I think I have just changed a couple of 
  options in them such as the opacity rule, font, and the terminal color Schemes - ayu dark for Alacritty and I built a custom
