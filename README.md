@@ -48,7 +48,7 @@ These are pretty much all of the frequent ones but if you consider you can read 
 ### Bar
 
 ---
-I am using Yabar this time which is the easiest bar I have found to set up. Yabar just requires you one config file and You need no shell 
+I do use Yabar as my bar which is very easy to set up and to configure. Yabar just requires you one config file and You need no shell 
 Scripting at all infact I have just used yabar modules **YABAR_BATTERY**, **YABAR_WORKSPACE**, **YABAR_TITLE**, **YABAR_WIFI**, and **YABAR_VOLUME**
 to configure my bar and trust me I don't need anything else except these modules. You can easily cofigure yabar by reading this [doc](https://github.com/geommer/yabar/blob/master/doc/yabar.1.asciidoc)
 
