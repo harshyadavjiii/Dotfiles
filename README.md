@@ -8,15 +8,7 @@ I do use bspwm I like the default tiling layout of bspwm and it's very easy to c
 I am using is just bspwm's default config just a couple of lines here and there.
 
 
-
-
-
-
-![2022-05-20](https://user-images.githubusercontent.com/52949057/172232827-2142e48d-c656-49c7-856f-56a1404730e6.png)
-
-
-
-
+![Merged_document](https://user-images.githubusercontent.com/52949057/173224252-c1e3a006-ac1d-40ab-a0ec-1a9aa1ea5c73.png)
 
 
 I use sxhkd for key bindings which is yet another easy to configure tool. 
