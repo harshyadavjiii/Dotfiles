@@ -22,9 +22,9 @@ I use sxhkd for key bindings which is yet another easy to configure tool.
 | Super + Space               | Launches Rofi in drun mode                     |
 | Super + tab                 | Launches Rofi to Switch between active windows |
 | Super + f                   | Full size the current window                   |
-| Super + m                   | Switch to Mono Layout                          |
-| Super + t                   | Switch to Grid Layout                          |
-| Super + s                   | Switch to Tiling Layout                        |
+| Super + m                   | Switches to Mono Layout                        |
+| Super + t                   | Switches to Grid Layout                        |
+| Super + s                   | Switches to Floating Mode                      |
 | Super + x                   | Turn off the bar                               |
 | Super + z                   | Turn on the bar                                |
 | Super +( <-,->)             | Moves the current window in floating mode      |
