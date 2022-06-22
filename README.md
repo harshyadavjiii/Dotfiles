@@ -76,7 +76,7 @@ Vim is by far most famous Unix text editor. I have used Vim Plug to manage vim p
  and the last one is Instant Markdown Preview which is my favourite - *It previews the changes I made to my markdown file Instantly in My Browser*
  
  
- ![2022-06-07](https://user-images.githubusercontent.com/52949057/172234333-d716a98e-1dde-49d9-af49-1585bfc7bf97.png)
+ ![Note-Making](https://user-images.githubusercontent.com/52949057/174978210-73e7daa8-41f6-4e80-9e73-56574e0a9de5.png)
  
  
  
