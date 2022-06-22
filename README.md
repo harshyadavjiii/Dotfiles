@@ -49,7 +49,11 @@ to configure my bar and trust me I don't need anything else except these modules
 Vim is by far most famous Unix text editor. I have used Vim Plug to manage vim plugins in my config.
  My config is pretty simple and clean. I don't use a dozen of PlugIns but the one's that works best for me.
  I do Use C Vim PlugIn for programming in C and C++ it helps me to write C/C++ Programs much faster and also 
- let me compile and execute C/C++ Programs inside Vim. It also has pre-defined macros and code snippets which makes it
+ let me compile and execute C/C++ Programs inside Vim. 
+ 
+ ![Cplusplus](https://user-images.githubusercontent.com/52949057/174981385-6f002949-9df4-4f54-8cfc-b8a50f961714.png)
+ 
+ It also has pre-defined macros and code snippets which makes it
  So handy when it comes to C/C++ Programming.
  
  
