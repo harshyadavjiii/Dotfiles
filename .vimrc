@@ -58,6 +58,17 @@ nnoremap <C-x> :NERDTreeToggle<CR>
 " }}}
 
 " VIMSCRIPT -------------------------------------------------------------- {{{
+"
+" To set colorscheme for Gvim
+if has('gui_running')
+    " set guioptions-=m " remove menu bar
+    set guioptions-=r " remove right-hand scroll bar
+    set guioptions-=L " remove left-hand scroll bar
+    set guioptions-=T " remove toolbar
+    set guifont=Source\ Code\ Pro\ Semibold\ 16
+    set background=dark
+    colorscheme ayu
+endif
 
 " This will enable code folding.
 " Use the marker method of folding.
