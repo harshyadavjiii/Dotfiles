@@ -8,15 +8,7 @@ I do use bspwm I like the default tiling layout of bspwm and it's very easy to c
 I am using is just bspwm's default config just a couple of lines here and there.
 
 
-
-
-
-
-![2022-05-20](https://user-images.githubusercontent.com/52949057/172232827-2142e48d-c656-49c7-856f-56a1404730e6.png)
-
-
-
-
+![2022-05-20](https://user-images.githubusercontent.com/52949057/174979501-431bb1d1-559c-4f41-a3c9-a0c4602d4e9d.png)
 
 
 I use sxhkd for key bindings which is yet another easy to configure tool. 
@@ -30,9 +22,9 @@ I use sxhkd for key bindings which is yet another easy to configure tool.
 | Super + Space               | Launches Rofi in drun mode                     |
 | Super + tab                 | Launches Rofi to Switch between active windows |
 | Super + f                   | Full size the current window                   |
-| Super + m                   | Switch to Mono Layout                          |
-| Super + t                   | Switch to Grid Layout                          |
-| Super + s                   | Switch to Tiling Layout                        |
+| Super + m                   | Switches to Mono Layout                        |
+| Super + t                   | Switches to Grid Layout                        |
+| Super + s                   | Switches to Floating Mode                      |
 | Super + x                   | Turn off the bar                               |
 | Super + z                   | Turn on the bar                                |
 | Super +( <-,->)             | Moves the current window in floating mode      |
@@ -57,7 +49,11 @@ to configure my bar and trust me I don't need anything else except these modules
 Vim is by far most famous Unix text editor. I have used Vim Plug to manage vim plugins in my config.
  My config is pretty simple and clean. I don't use a dozen of PlugIns but the one's that works best for me.
  I do Use C Vim PlugIn for programming in C and C++ it helps me to write C/C++ Programs much faster and also 
- let me compile and execute C/C++ Programs inside Vim. It also has pre-defined macros and code snippets which makes it
+ let me compile and execute C/C++ Programs inside Vim. 
+ 
+ ![Cplusplus](https://user-images.githubusercontent.com/52949057/174981385-6f002949-9df4-4f54-8cfc-b8a50f961714.png)
+ 
+ It also has pre-defined macros and code snippets which makes it
  So handy when it comes to C/C++ Programming.
  
  
@@ -84,7 +80,7 @@ Vim is by far most famous Unix text editor. I have used Vim Plug to manage vim p
  and the last one is Instant Markdown Preview which is my favourite - *It previews the changes I made to my markdown file Instantly in My Browser*
  
  
- ![2022-06-07](https://user-images.githubusercontent.com/52949057/172234333-d716a98e-1dde-49d9-af49-1585bfc7bf97.png)
+ ![Note-Making](https://user-images.githubusercontent.com/52949057/174978210-73e7daa8-41f6-4e80-9e73-56574e0a9de5.png)
  
  
  
