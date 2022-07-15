@@ -1,6 +1,7 @@
 syntax on
 set nocompatible
 set number
+set relativenumber
 filetype on
 filetype plugin on
 filetype indent on
@@ -18,7 +19,7 @@ set undodir=~/.vim/undodir
 set undofile
 set mouse=a
 set fillchars+=vert:.
-
+set colorcolumn=
 " Wild Menu
 set wildmenu " for autocompletion
 set wildmode=list:longest " Make wildmenu behave like BC
@@ -47,13 +48,17 @@ call plug#end()
 
 inoremap jk <esc>
 nnoremap <space> :
-nnoremap c :call C_Compile()<CR>:redraw<CR>:call C_HlMessage()<CR>
+" nnoremap c :call C_Compile()<CR>:redraw<CR>:call C_HlMessage()<CR>
 nnoremap e :call C_Run()<CR>
 
 " Mappings for the NERD Tree Commands
 nnoremap <C-a> :NERDTreeFocus<CR>
 nnoremap <C-z> :NERDTree<CR>
 nnoremap <C-x> :NERDTreeToggle<CR>
+
+" To remove GUI Menu
+nnoremap <M> :set guioptions+=m
+nnoremap <M-m> :set guioptions-=m
 
 " }}}
 
@@ -66,8 +71,7 @@ if has('gui_running')
     set guioptions-=L " remove left-hand scroll bar
     set guioptions-=T " remove toolbar
     set guifont=Source\ Code\ Pro\ Semibold\ 16
-    set background=dark
-    colorscheme ayu
+    colorscheme molokayo
 endif
 
 " This will enable code folding.
@@ -115,5 +119,5 @@ set statusline+=\ row:\ %l\ col:\ %c\ \ line:\ %l\/%L
 " Show the status on the second to last line.
 set laststatus=2
 
-hi VertSplit cterm=NONE ctermbg=Blue ctermfg=Blue guibg=NONE
+hi VertSplit cterm=NONE ctermbg=Blue ctermfg=Blue guibg=#282629 guifg=#282629
 "}}} 

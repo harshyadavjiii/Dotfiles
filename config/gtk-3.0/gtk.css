@@ -1,0 +1,13 @@
+@import 'colors.css';
+
+#pulseaudio-button > image {
+  -gtk-icon-transform: scale(0.5);
+}
+
+#clock-button {
+	font-weight: bold;
+}
+
+#xfce4-clipman-plugin > image {
+  -gtk-icon-transform: scale(0.6);
+}

@@ -1,9 +1,11 @@
 #! /bin/sh
 
 pgrep -x sxhkd > /dev/null || sxhkd &
-picom -f &
+wmname LG3D
+picom --experimental-backends &
 yabar &
-~/.fehbg
+nitrogen --restore &
+# ~/.fehbg
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 
@@ -17,6 +19,8 @@ bspc config focus_follows_pointer true
 
 bspc rule -a Gimp desktop='^8' state=floating follow=on
 bspc rule -a Chromium desktop='^2'
+bspc rule -a jetbrains-idea-ce state=floating follow=on
+bspc rule -a jetbrains-pycharm-ce desktop='^4' state=floating follow=on
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
