@@ -20,6 +20,8 @@ set undofile
 set mouse=a
 set fillchars+=vert:.
 set colorcolumn=
+set laststatus=2
+
 " Wild Menu
 set wildmenu " for autocompletion
 set wildmode=list:longest " Make wildmenu behave like BC
@@ -33,6 +35,7 @@ Plug 'dense-analysis/ale'
 Plug 'preservim/nerdtree'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'drewtempelmeyer/palenight.vim'
+Plug 'pineapplegiant/spaceduck',
 Plug 'ap/vim-css-color'
 Plug 'tpope/vim-commentary'
 Plug 'ryanoasis/vim-devicons'
@@ -64,14 +67,21 @@ nnoremap <M-m> :set guioptions-=m
 
 " VIMSCRIPT -------------------------------------------------------------- {{{
 "
-" To set colorscheme for Gvim
+colorscheme purify
+" " To set colorscheme for Gvim
 if has('gui_running')
+    call plug#begin('~/.vim/plugged')
+    Plug 'itchyny/lightline.vim'
+    call plug#end()
     " set guioptions-=m " remove menu bar
     set guioptions-=r " remove right-hand scroll bar
     set guioptions-=L " remove left-hand scroll bar
     set guioptions-=T " remove toolbar
     set guifont=Source\ Code\ Pro\ Semibold\ 16
     colorscheme molokayo
+    let g:lightline = {
+            \ 'colorscheme':'molokai',
+            \ }
 endif
 
 " This will enable code folding.
@@ -107,17 +117,33 @@ augroup END
 " Clear status line when vimrc is reloaded.
 set statusline=
 
+let g:currentmode={
+       \ 'n'  : 'NORMAL ',
+       \ 'v'  : 'VISUAL ',
+       \ 'V'  : 'V·Line ',
+       \ "\<C-V>" : 'V·Block ',
+       \ 'i'  : 'INSERT ',
+       \ 'R'  : 'R ',
+       \ 'Rv' : 'V·Replace ',
+       \ 'c'  : 'Command ',
+       \}
 " Status line left side.
+set statusline+=\ %{toupper(g:currentmode[mode()])}
 set statusline+=\ %F\ %M\ %Y\ %R
-
+set statusline+=%{&modified?'[+]':''}
 " Use a divider to separate the left side from the right side.
 set statusline+=%=
 
 " Status line right side.
 set statusline+=%{strlen(&fenc)?&fenc:&enc}
 set statusline+=\ row:\ %l\ col:\ %c\ \ line:\ %l\/%L
-" Show the status on the second to last line.
-set laststatus=2
+let currentMode = mode()
+" let g:lightline = {
+"             \ 'colorscheme': 'one',
+"             \ }
+" set background=dark
+hi StatusLine ctermbg=0 cterm=NONE
+hi StatusLine ctermbg=none cterm=bold
 
 hi VertSplit cterm=NONE ctermbg=Blue ctermfg=Blue guibg=#282629 guifg=#282629
 "}}} 
