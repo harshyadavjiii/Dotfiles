@@ -51,7 +51,7 @@ Vim is by far most famous Unix text editor. I have used Vim Plug to manage vim p
  I do Use C Vim PlugIn for programming in C and C++ it helps me to write C/C++ Programs much faster and also 
  let me compile and execute C/C++ Programs inside Vim. 
  
- ![Cplusplus](https://user-images.githubusercontent.com/52949057/174981385-6f002949-9df4-4f54-8cfc-b8a50f961714.png)
+ ![Vim New](https://user-images.githubusercontent.com/52949057/205480948-0eaf8efa-12df-4fd5-811f-289b02a90b22.png)
  
  It also has pre-defined macros and code snippets which makes it
  So handy when it comes to C/C++ Programming.
