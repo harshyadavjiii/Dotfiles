@@ -34,10 +34,11 @@ Plug 'sheerun/vim-polyglot'
 Plug 'dense-analysis/ale'
 Plug 'preservim/nerdtree'
 Plug 'rafi/awesome-vim-colorschemes'
+Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 Plug 'drewtempelmeyer/palenight.vim'
-Plug 'pineapplegiant/spaceduck',
 Plug 'ap/vim-css-color'
 Plug 'tpope/vim-commentary'
+Plug 'jeffkreeftmeijer/vim-dim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'junegunn/limelight.vim'
 Plug 'junegunn/goyo.vim'
@@ -63,12 +64,27 @@ nnoremap <C-x> :NERDTreeToggle<CR>
 nnoremap <M> :set guioptions+=m
 nnoremap <M-m> :set guioptions-=m
 
+inoremap #io<TAB> #include <stdio.h> <CR>#include <stdlib.h>
+inoremap #i<TAB> #include <iostream> <CR>using namespace std;
+inoremap #im<TAB> #include "myFunctions.h"
+
+" " To auto-complete braces and quotes
+inoremap ( ()<Esc>i
+inoremap { {}<Esc>i
+inoremap {<CR> {<CR>}<Esc>O
+inoremap [ []<Esc>i
+inoremap ' ''<Esc>i
+inoremap " ""<Esc>i
+
+" build tags of your own project with Ctrl-F12
+map <C-F12> :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 " }}}
 
 " VIMSCRIPT -------------------------------------------------------------- {{{
-"
-colorscheme purify
-" " To set colorscheme for Gvim
+
+colorscheme dim
+
+" To set colorscheme for Gvim
 if has('gui_running')
     call plug#begin('~/.vim/plugged')
     Plug 'itchyny/lightline.vim'
@@ -77,11 +93,12 @@ if has('gui_running')
     set guioptions-=r " remove right-hand scroll bar
     set guioptions-=L " remove left-hand scroll bar
     set guioptions-=T " remove toolbar
-    set guifont=Source\ Code\ Pro\ Semibold\ 16
-    colorscheme molokayo
-    let g:lightline = {
-            \ 'colorscheme':'molokai',
-            \ }
+    set guifont=Cascadia\ Code\ SemiLight\ 18
+    let g:material_terminal_italics = 1
+    let g:material_theme_style = 'ocean'
+    colorscheme material
+    " let g:palenight_terminal_italics=1
+    let g:lightline = { 'colorscheme': 'material_vim' }
 endif
 
 " This will enable code folding.
@@ -110,6 +127,9 @@ augroup cursor_off
     autocmd WinEnter * set cursorline cursorcolumn
 augroup END
 
+" Disabling on cursor highlight
+let g:ale_virtualtext_cursor=0
+
 " }}}
 
 "STATUS LINE ------------------------------------------------------------ {{{
@@ -118,15 +138,15 @@ augroup END
 set statusline=
 
 let g:currentmode={
-       \ 'n'  : 'NORMAL ',
-       \ 'v'  : 'VISUAL ',
-       \ 'V'  : 'V·Line ',
-       \ "\<C-V>" : 'V·Block ',
-       \ 'i'  : 'INSERT ',
-       \ 'R'  : 'R ',
-       \ 'Rv' : 'V·Replace ',
-       \ 'c'  : 'Command ',
-       \}
+            \ 'n'  : 'NORMAL ',
+            \ 'v'  : 'VISUAL ',
+            \ 'V'  : 'V·Line ',
+            \ "\<C-V>" : 'V·Block ',
+            \ 'i'  : 'INSERT ',
+            \ 'R'  : 'R ',
+            \ 'Rv' : 'V·Replace ',
+            \ 'c'  : 'Command ',
+            \}
 " Status line left side.
 set statusline+=\ %{toupper(g:currentmode[mode()])}
 set statusline+=\ %F\ %M\ %Y\ %R
@@ -145,5 +165,6 @@ let currentMode = mode()
 hi StatusLine ctermbg=0 cterm=NONE
 hi StatusLine ctermbg=none cterm=bold
 
-hi VertSplit cterm=NONE ctermbg=Blue ctermfg=Blue guibg=#282629 guifg=#282629
+hi VertSplit cterm=NONE ctermbg=Blue ctermfg=Blue guibg=#1c1f30 guifg=#1c1f30
+
 "}}} 

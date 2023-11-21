@@ -4,13 +4,13 @@
 
 # shortcuts for the terminals that I use
 super + Return
-	kitty
+	alacritty
 
 super + a
-	alacritty
+	kitty
 
 super + A
-	alacritty
+	kitty
 
 # program launcher
 super + @space

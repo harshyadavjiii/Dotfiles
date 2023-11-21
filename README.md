@@ -40,16 +40,23 @@ These are pretty much all of the frequent ones but if you consider you can read 
 ### Bar
 
 ---
-I do use Yabar as my bar which is very easy to set up and to configure. Yabar just requires you one config file and You need no shell 
-Scripting at all infact I have just used yabar modules **YABAR_BATTERY**, **YABAR_WORKSPACE**, **YABAR_TITLE**, **YABAR_WIFI**, and **YABAR_VOLUME**
-to configure my bar and trust me I don't need anything else except these modules. You can easily cofigure yabar by reading this [doc](https://github.com/geommer/yabar/blob/master/doc/yabar.1.asciidoc)
+I do use Yabar as my bar which is very easy to set up and to configure. 
+Yabar just requires you one config file and You need no shell 
+Scripting at all infact I have just used yabar modules 
+**YABAR_BATTERY**, **YABAR_WORKSPACE**, **YABAR_TITLE**, **YABAR_WIFI**, and **YABAR_VOLUME**
+to configure my bar and trust me I don't need anything else except these modules. 
+You can easily cofigure yabar by reading this 
+[doc](https://github.com/geommer/yabar/blob/master/doc/yabar.1.asciidoc)
 
 ### Vim
 ---
-Vim is by far most famous Unix text editor. I have used Vim Plug to manage vim plugins in my config.
- My config is pretty simple and clean. I don't use a dozen of PlugIns but the one's that works best for me.
- I do Use C Vim PlugIn for programming in C and C++ it helps me to write C/C++ Programs much faster and also 
- let me compile and execute C/C++ Programs inside Vim. 
+Vim is by far most famous Unix text editor. 
+I have used Vim Plug to manage vim plugins in my config.
+My config is pretty simple and clean. 
+I don't use a dozen of PlugIns but the one's that works best for me.
+I do Use C Vim PlugIn for programming in 
+C and C++ it helps me to write C/C++ Programs much faster and also 
+let me compile and execute C/C++ Programs inside Vim. 
  
  ![Vim New](https://user-images.githubusercontent.com/52949057/205480948-0eaf8efa-12df-4fd5-811f-289b02a90b22.png)
  
@@ -74,10 +81,14 @@ Vim is by far most famous Unix text editor. I have used Vim Plug to manage vim p
  
  
  
- Another usecase for me to use Vim is to make notes in markdown. In my expirience it works better a lot better then
- using Apps like Simple Note. There are three Vim PlugIns that I use to make my Note making expirience distraction free. 
- Limelight - *it highlights the current line I am on*, *Goyo which centered the whole text and removes any active terminal, buffer, Statusline, etc.*
- and the last one is Instant Markdown Preview which is my favourite - *It previews the changes I made to my markdown file Instantly in My Browser*
+ Another usecase for me to use Vim is to make notes in markdown. 
+ In my expirience it works better a lot better then
+ using Apps like Simple Note. 
+ There are three Vim PlugIns that I use to make my Note making expirience distraction free. 
+ Limelight - *it highlights the current line I am on*, 
+ *Goyo which centered the whole text and removes any active terminal, buffer, Statusline, etc.*
+ and the last one is Instant Markdown Preview which is my favourite - 
+ *It previews the changes I made to my markdown file Instantly in My Browser*
  
  
  ![Note-Making](https://user-images.githubusercontent.com/52949057/174978210-73e7daa8-41f6-4e80-9e73-56574e0a9de5.png)
@@ -85,6 +96,8 @@ Vim is by far most famous Unix text editor. I have used Vim Plug to manage vim p
  
  
  
- ****Other than these tools I use Kitty and Alacritty as Terminal emulators I think I have just changed a couple of 
- options in them such as the opacity rule, font, and the terminal color Schemes - ayu dark for Alacritty and I built a custom
+ ****Other than these tools I use Kitty and Alacritty as Terminal emulators 
+ I think I have just changed a couple of 
+ options in them such as the opacity rule, font, and the terminal color Schemes 
+ - ayu dark for Alacritty and I built a custom
  color scheme for Kitty****

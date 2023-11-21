@@ -1,0 +1,28 @@
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+use autodie;
+
+open my $bspwm_data, '-|', 'bspc subscribe report';
+
+# Autoflush
+$| = 1;
+
+while (<$bspwm_data>) {
+    my @raw_workspaces = /[oOuUF][^:]+/g;
+
+    my @workspaces = map {
+        # Focused workspace
+        if (s/^[OFU]//) {
+            "<span color=\"#24591f\">$_</span>";
+        }
+        # Urgent workspace
+        elsif (s/^u//) {
+            "<span color=\"gold\">$_</span>";
+        } else {
+            s/^.//r;
+        }
+    } @raw_workspaces;
+    print "@workspaces\n";
+}
